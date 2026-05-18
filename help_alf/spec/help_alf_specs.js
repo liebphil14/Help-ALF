@@ -1,16 +1,16 @@
 describe("Help ALF", function() {
 
-	it("should return coordinates of spaceship and should be found in last row", function() {
+	it("should count multiple rows correctly", function() {
 
 		const map = 
 			"..........\n" +
 			"..........\n" +
 			"..........\n" +
+			"...X......\n" +
 			"..........\n" +
-			"..........\n" +
-			"......X...";
+			"..........";
 
-		expect(findSpaceship(map)).toEqual([6, 0]);
+		expect(findSpaceship(map)).toEqual([3, 2]);
 	});
 });
 
