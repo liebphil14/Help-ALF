@@ -1,16 +1,16 @@
 describe("Help ALF", function() {
 
-	it("should count multiple rows correctly", function() {
+	it("correct count when x and y are the same", function() {
 
 		const map = 
 			"..........\n" +
 			"..........\n" +
-			"..........\n" +
 			"...X......\n" +
+			"..........\n" +
 			"..........\n" +
 			"..........";
 
-		expect(findSpaceship(map)).toEqual([3, 2]);
+		expect(findSpaceship(map)).toEqual([3, 3]);
 	});
 });
 
