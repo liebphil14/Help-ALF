@@ -10,7 +10,7 @@ describe("Help ALF", function() {
 			"..........\n" +
 			"..........";
 
-		expect(findSpaceship(map)).toEqual([3, 5]);
+		expect(findSpaceship(map)).toEqual([3, 5,]);
 	});
 });
 
